@@ -14,7 +14,7 @@ class App extends Component {
 
   handleClick () {
     axios.get('https://api.github.com/users/lolita89')
-      .then(response => console.log(response))
+      .then(response => this.setState({username: response.data.name}))
   }
 
 
@@ -24,6 +24,7 @@ class App extends Component {
       <button className="button" onClick={this.handleClick}>
         Click me please!!
       </button>
+      <p>This is gitHub of {this.state.username}</p>
     </div>
     );
   }
