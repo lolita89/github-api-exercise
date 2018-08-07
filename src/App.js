@@ -42,27 +42,27 @@ class App extends Component {
     return (
     <div>
       <h1>Hello!!</h1>
-      <h4>It is the exercise to get the data from GitHub API</h4>
+      <h4>It is the simple exercise to get the data from GitHub API</h4>
         
         <div className="button_container">
 
-          <button className="button-name" onClick={this.nameClick}>
+          <button className="button button-name" onClick={this.nameClick}>
             Click me to see the owner of the GitHub account
           </button>
 
-           <button className="button-id" onClick={this.idClick}>
+           <button className="button button-id" onClick={this.idClick}>
             Its ID
           </button>
 
-           <button className="button-location" onClick={this.locationClick}>
+           <button className="button button-location" onClick={this.locationClick}>
             Her Location
           </button>
 
-           <button className="button-blog" onClick={this.blogClick}>
+           <button className="button button-blog" onClick={this.blogClick}>
             Her blog
           </button>
 
-          <p>This is gitHub of {this.state.username}</p>
+          <p>This is GitHub of {this.state.username}</p>
           <p>Her id is {this.state.id}</p>
           <p>She lives in {this.state.location}</p>
           <p>Her blog is {this.state.blog}</p>
