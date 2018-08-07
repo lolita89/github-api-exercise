@@ -1,14 +1,11 @@
-.button_container {
-  text-align: center;
+h1 {
+  text-align: center
 }
 
-.button {
-  background-color: pink;
-  border: none;
-  color: black;
-  font-size: 16px;
-  height: 40px;
-  width: 200px;
-  position: absolute;
-  top: 50%;
+h4 {
+  text-align: center
+}
+
+.button_container {
+  text-align: center;
 }
