@@ -1,33 +1,24 @@
-body {
-  background-color: bisque;
-  font-family: 'Corben', cursive;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
-h4 {
-  text-align: center;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-p {
-  color: blueviolet;
-}
-
-.button_container {
-  text-align: center;
-}
-
-.button {
-  background-color: pink;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 8px;
-  cursor: pointer;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
 }
