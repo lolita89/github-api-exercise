@@ -11,13 +11,11 @@ class App extends Component {
     <div className="row">
         
         <div className="column">
-          <ApiGithub>  
-          </ApiGithub>
+          <ApiGithub/>  
         </div>
 
         <div className="column">
-          <ApiSpotify> 
-          </ApiSpotify>
+          <ApiSpotify/> 
         </div>
         
     </div>

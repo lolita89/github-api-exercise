@@ -55,7 +55,7 @@ class ApiSpotify extends Component {
             </div>
   
             <div>
-                <img src={this.state.nowPlaying.albumArt} style={{ height: 150 }}/>
+                <img alt="spotify song" src={this.state.nowPlaying.albumArt} style={{ height: 150 }}/>
             </div>
   
             { this.state.loggedIn &&
